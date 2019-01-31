@@ -21,3 +21,27 @@ th:nth-child(3), td:nth-child(3){border-right: 2px solid #ddd}
     color:red;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/*for table in workshop*/
+table.minimalistBlack {
+  border: 0px solid #FFFFFF;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.minimalistBlack td, table.minimalistBlack th {
+  border: 0px solid #FFFFFF;
+  padding: 5px 5px;
+}
+table.minimalistBlack tbody td {
+  font-size: 17px;
+}
+/* table.minimalistBlack thead {
+  border-bottom: 2px solid #ccc8c8;
+} */
+table.minimalistBlack thead th {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  text-align: center;
+}
