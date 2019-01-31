@@ -1,7 +1,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>ODAI</title>
+	<title>DOAI2019</title>
 	<!-- <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">     -->
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">    
 	<link rel="stylesheet" type="text/css" href="css/mystyle.css"
@@ -15,13 +15,13 @@
 	<div class="jumbotron">
 		<div class="content">
 			<h1 style="text-align:center; margin-top:80px; font-weight: bold; color:rgb(100,10,250); font-size: 48px;">
-				Object Detection in Aerial Images (ODAI)
+				Detecting Objects in Aerial Images (DOAI)
 			</h1>
 
 			<!-- <p style="text-align:center; color:blue; position:relative; top:7%"> -->
 			<p style="text-align:center; margin-top:15px; color: rgb(10,10,250); font-size: 32px;">
 				<strong>
-						<span style="font-style:italic">A Contest on ICPR'2018 </span>
+						<span style="font-style:italic">A Workshop at CVPR'2019 </span>
 				</strong> 
 			</p>
 			<!-- <body background="images/largeimage2.jpg"></body> -->
@@ -31,20 +31,38 @@
 	</div>
 
 
-	
 	<div class="row">
-	  <div class="span6 offset2">
-	   <ul class="nav nav-tabs">
-		<li class="active"> <a href="index.html">Home</a></li>
-		<!-- <li> <a href="dataset.html">Dataset</a></li> -->
-		<!-- <li><a href="tasks.html">Tasks</a></li> -->
-		<li><a href="evaluation.html">Evaluation</a></li>
-		<li><a href="results.html">Results</a></li>
-		<li><a href="contact.html">Contact</a></li>
-		<br />
-	   </ul>
-	  </div>
+		<div class="span6 offset2">
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="dataset.html">Dataset</a>
+				</li>
+				<li>
+					<a href="tasks.html">Tasks</a>
+				</li>
+				<li>
+					<a href="evaluation.html">Evaluation</a>
+				</li>
+				<li>
+					<a href="results.html">Results</a>
+				</li>
+				<li>
+					<a href="workshop.html">Workshop</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			<br />
+			</ul>
+		</div>
 	</div>
+
+
+	
+
 
 	<div class="row">
 	<div class="span12">
@@ -54,13 +72,13 @@
 	</h2>
 	<p>
 		<ul>
-			<li style="font-size:16px">
+			<li>
 					<strong>2018-03-27</strong> The submission deadline is extended to April 25.<strong class="news">New</strong>
 			</li>
-			<li style="font-size:16px">
+			<li>
 				<strong>2018-03-16</strong> The registration is open now. Please <a href="http://119.23.15.48:8001">registrate</a> to download the extra test images and submit your results.<strong class="news">New</strong>
 			</li>
-			<li style="font-size:16px">
+			<li>
 					<strong>2018-03-8</strong> DOTA <a href="https://github.com/CAPTAIN-WHU/DOTA_devkit">development kit</a> ia available now. It's helpful to play on ODAI! <strong class="news">New</strong>
 			</li>
 			<li>
@@ -72,7 +90,7 @@
 		Registration
 	</h2>
 	<p>
-		For download the extra test images and submit your results, registrate on the <a href="http://119.23.15.48:8001/login/?next=/l">contest page</a>.
+		To download the extra test images and submit your results, please registrate on the <a href="http://119.23.15.48:8001/login/?next=/l">contest page</a>.
 	</p>
 	<h2 style="text-align:left; margin-bottom:10px; margin-top:20px; ">  
 		Description
@@ -128,28 +146,40 @@
 		Timeline
 	</h2>
 	<ul>
-		<!-- <li>
-			<strong>Whole Train, validation sets and part of test images are avaliable</strong> February 1, 2018	 
-		</li> -->
-		<!-- <li>
-				<strong>Registration and Submission open</strong> February 1, 2018
-		</li> -->
 		<li>
-			<strong>Extra test images for ODAI-18 available</strong> March 16, 2018
+			Registration open and call for challenge: March 5, 2019	 
+		</li> 
+		<li>
+			Training/Validation dataset available: March 5, 2019
 		</li>
 		<li>
-			<strong>Submission open</strong> March 16, 2018
+			Opening submission site and provide test dataset (development phase): March 11, 2019
 		</li>
 		<li>
-			<strong>Submission deadline</strong> April 25, 2018 
+			Opening paper submissions: March 11, 2019
+		</li>
+		<li>
+			Opening second round (evaluation phase): May 1, 2019
+		</li>
+		<li>
+			<strong>Paper submission deadline:</strong> May 1, 2019
+		</li>
+		<li>
+			<strong>Challenge submission deadline:</strong> May 15, 2019
+		</li>
+		<li>
+			Paper notification to authors: May 22, 2019
+		</li>
+		<li>
+			Camera ready deadline: May 27, 2019
+		</li>
+		<li>
+			Challenge notification to authors: June 1, 2019
 		</li>
 
-		<li>
-			<strong>Submission of contest report</strong> April 30, 2018
-		</li>
 	</ul>
 
-	<h2>
+	<!-- <h2>
 		Tasks
 	</h2>
 	<p>
@@ -157,22 +187,8 @@
 			and object detection with oriented bounding box.
 			Task1 uses the initial annotation as ground truth, while Task2 uses the generated axis-aligned bounding boxes as ground truth. 
 			We recommond you to test your algorithms by way of Task1, although the results from task2 are also of great practical value.
-	</p>
-	<!-- <h3>
-		Task1 - Detection with oriented bounding boxes
-	</h3>
-	<p>
-			The aim of this task is to locate the ground object instances with an oriented bounding box. 
-			The oriented bounding box follows the same format with the original annotation
-	</p>
-	<h3>
-		Task2 - Detection with horizontal bounding boxes
-	</h3>
-	<p>
-			Detecting object with horizontal bounding boxes is usual in many previous contests for object detection. 
-			The aim of this task is to accurately localize the instance in terms of horizontal bounding box with (x, y, w, h) format. 
-			In the task, the ground truths for training and testing are generated by calculating the axis-aligned bounding boxes over original annotated bounding boxes.
 	</p> -->
+	
 	<strong>
 			For more details and submission format, refer to the <a href="https://captain-whu.github.io/DOTA/tasks.html">Tasks Page </a> on DOTA.
 	</strong>
@@ -223,9 +239,9 @@
         <li>
             <strong><a href="http://www.lmars.whu.edu.cn/prof_web/zhangliangpei/rs/xueshu.htm">Liangpei Zhang</a></strong> Professor at LIESMARS, Wuhan University, China
         </li>
-		        <li>
-            <strong><a href="http://captain.whu.edu.cn/hufan.html">Fan Hu</a></strong> Postdoctoral researcher at the Electronic Information School, Wuhan University, China
-        </li>
+		        <!--<li>-->
+            <!--<strong><a href="http://captain.whu.edu.cn/hufan.html">Fan Hu</a></strong> Postdoctoral researcher at the Electronic Information School, Wuhan University, China-->
+        <!--</li>-->
     </ul>
 	
 	<ul>
