@@ -85,10 +85,12 @@
 					Overview
 				</h2>
 				<p>
-					We propose three detection tasks. Task1 uses the initial annotation as ground truth.
-					Task2 uses the generated axis-aligned bounding boxes as ground truth.
-					The results from task2 are of great practical value. 
-					We recommond you to test your algorithms by way of Task1. 
+					We propose three detection tasks.
+					Task1 is to detect instances with oriented bounding boxes.
+					Task2 is to detect instances with horizontal bounding boxes.
+					Task3 is jointly object detection and orientation estimation for movable instances
+					<!-- The results from task2 are of great practical value.  -->
+					<!-- We recommond you to test your algorithms by way of Task1.  -->
 					You can use the provided train/val data to train and validate your detector. Validation data may also be used 
 					for training when submitting results on the test set.
 					External datas of any form is allowed. But must be reported during submission. Fine-tuning models that are pretrained
@@ -96,56 +98,7 @@
 				</p>
 
 				<h2>
-					<b>Task1</b> - Detection with horizontal bounding boxes
-				</h2>
-				<p>
-					Detecting object with horizontal bounding boxes is usual in many previous contests for object
-					detection. The aim of this task is to accurately localize the instance in terms of horizontal bounding
-					box with (x, y, w, h) format. In the task, the ground truths for training and testing are generated
-					by calculating the axis-aligned bounding boxes over original annotated bounding boxes.
-				</p>
-				<p>
-
-				</p>
-
-				<!-- <h3>
-					Evaluation Server
-				</h3>
-				<p>
-					For evaluation, you must registrate and submit on the
-						<a href="http://www.icdar2017chinese.site:5080/evaluation1/">Evaluation Server</a>
-				</p> -->
-
-				<h3>
-					Submission Format
-				</h3>
-				<p>
-					You will be asked to submit a zip file containing results for all test images to evaluate your results.
-					<!--The results are stored in 15 files, -->
-					<!--<strong style="color:blue">"Task2_plane.txt, Task2_storage-tank.txt, ..."</strong>, each file contains all the results for a specific category.-->
-					The format of the results is:
-				</p>
-
-				<pre>
-					<code style="font-size:16px">
-  x y w h category score
-  x y w h category score
-  ...
-					</code>
-				</pre>
-				<!-- <a href="submissionformat/example_task2.rar">An example submission of task1</a> -->
-
-				<h3>
-					Evaluation Protocol
-				</h3>
-				<p>
-					The evaluation protocol for horizontal bounding boxes follows the PASCAL VOC benchmark,
-					which uses mean Average Precision(<strong>mAP</strong>) as the primary metric.
-				</p>
-
-
-				<h2>
-					<b>Task2</b> - Detection with oriented bounding boxes<!--<strong>(Recommended)</strong> -->
+					<b>Task1</b> - Detection with oriented bounding boxes<!--<strong>(Recommended)</strong> -->
 				</h2>
 					<p>
 					The purpose of this task is to localize the ground object instances with an oriented bounding box.
@@ -186,6 +139,56 @@
 					original PASCAL VOC. We use the intersection over the union area of two polygons(ground truth
 					and prediction) to calculate the IoU. The rest follows the PASCAL VOC.
 				</p>
+
+
+				<h2>
+						<b>Task2</b> - Detection with horizontal bounding boxes
+					</h2>
+					<p>
+						Detecting object with horizontal bounding boxes is usual in many previous contests for object
+						detection. The aim of this task is to accurately localize the instance in terms of horizontal bounding
+						box with (x, y, w, h) format. In the task, the ground truths for training and testing are generated
+						by calculating the axis-aligned bounding boxes over original annotated bounding boxes.
+					</p>
+					<p>
+	
+					</p>
+	
+					<!-- <h3>
+						Evaluation Server
+					</h3>
+					<p>
+						For evaluation, you must registrate and submit on the
+							<a href="http://www.icdar2017chinese.site:5080/evaluation1/">Evaluation Server</a>
+					</p> -->
+	
+					<h3>
+						Submission Format
+					</h3>
+					<p>
+						You will be asked to submit a zip file containing results for all test images to evaluate your results.
+						<!--The results are stored in 15 files, -->
+						<!--<strong style="color:blue">"Task2_plane.txt, Task2_storage-tank.txt, ..."</strong>, each file contains all the results for a specific category.-->
+						The format of the results is:
+					</p>
+	
+					<pre>
+						<code style="font-size:16px">
+	  x y w h category score
+	  x y w h category score
+	  ...
+						</code>
+					</pre>
+					<!-- <a href="submissionformat/example_task2.rar">An example submission of task1</a> -->
+	
+					<h3>
+						Evaluation Protocol
+					</h3>
+					<p>
+						The evaluation protocol for horizontal bounding boxes follows the PASCAL VOC benchmark,
+						which uses mean Average Precision(<strong>mAP</strong>) as the primary metric.
+					</p>
+
 
 				<h2>
 					<b>Task3</b> - Jointly object detection and orientation estimation for movable instances
