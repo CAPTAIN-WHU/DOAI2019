@@ -9,6 +9,46 @@ th:nth-child(3), td:nth-child(3){border-right: 2px solid #ddd}
 /* .table-a */
  table{border: 2px solid #ddd}
 
+ /*image gallery*/
+ div.gallery {
+  margin: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 140px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.gallery2 {
+  margin: 90px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 140px;
+}
+
+div.gallery2:hover {
+  border: 1px solid #777;
+}
+
+div.gallery2 img {
+  width: 100%;
+  height: auto;
+}
+
+
+
  .jumbotron {
     background: url('../images/background4.jpg');
     margin-top: 50px;
