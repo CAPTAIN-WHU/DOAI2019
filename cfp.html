@@ -1,0 +1,248 @@
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>DOAI2019</title>
+    <!-- <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">     -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <script src="jquery/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <style>
+        /*image gallery*/
+
+        div.gallery {
+            margin: 10px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 140px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <div class="content">
+                <h1 style="text-align:center; margin-top:80px; font-weight: bold; color:rgb(100,10,250); font-size: 48px;">
+                    Detecting Objects in Aerial Images (DOAI)
+                </h1>
+
+                <!-- <p style="text-align:center; color:blue; position:relative; top:7%"> -->
+                <p style="text-align:center; margin-top:15px; color: rgb(10,10,250); font-size: 32px;">
+                    <strong>
+                        <span style="font-style:italic">A Workshop at CVPR'2019 </span>
+                    </strong>
+                </p>
+                <!-- <body background="images/largeimage2.jpg"></body> -->
+                <!-- <img src="images/largeimage2.jpg" class="img-responsive center-block" /> -->
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="span6 offset2">
+                <ul class="nav nav-tabs">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="cfp.html">CFP</a>
+                    </li>
+                    <li>
+                        <a href="people.html">People</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Challenge
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <!-- <li>
+									<a href="guideline.html">Participation guidelines</a>
+								</li> -->
+                            <li>
+                                <a href="dataset.html">Dataset</a>
+                            </li>
+                            <li>
+                                <a href="evaluation.html">Evaluation</a>
+                            </li>
+                            <li>
+                                <a href="results.html">Results</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="program.html">Program</a>
+                    </li>
+
+                    <li>
+                        <a href="ImportantDate.html"> Dates </a>
+                    </li>
+                    <li>
+                        <a href="sponsors.html">Sponsors</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <br />
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="row">
+            <div class="span12">
+
+
+                <h2 style="text-align:left; margin-bottom:10px; margin-top:20px; ">
+                    Description
+                </h2>
+
+                <p>
+                    Object detection in Earth Vision, also known asEarth Observation and Remote Sensing, refers to the problem of localizing
+                    objects of interest (e.g., vehicles and airplanes) on the earth’s surface and predicting their corresponding
+                    land-use categories. Observing plenty of instances from the overhead view provide a new way to understand
+                    the world. This is a relatively new field, with many new applications waiting to be developed. For movable
+                    categories, such as vehicles, ships,and planes, the orientation estimation is important for tracking.The
+                    majority of computer vision research focuses mostly on images from everyday life. However,the aerial
+                    imagery is a rich and structured source of information, yet, it is less investigated. The task of object
+                    detection in aerial images is distinguished from the conventional object detectiontask in the following
+                    respects:
+                    <ul>
+                        <li>
+                            The scale variations of object instances in aerial images are considerably huge.
+                        </li>
+                        <li>
+                            Many small object instances are densely distributed in aerial images, for example, the ships in a harbor and the vehicles
+                            in a parking lot.
+                        </li>
+                        <li>
+                            Objects in aerial images often appear in arbitrary orientations.
+                        </li>
+                    </ul>
+                </p>
+
+
+                <p>
+                    This contest, organizing on
+                    <a href="http://cvpr2019.thecvf.com/">CVPR'2019</a>, features a new large-scale image database of object detection in aerial images.
+                    <!-- , named <a href="https://captain-whu.github.io/DOTA/index.html">DOTA</a> with nearly <strong style="color:blue">3000</strong> 
+		large-size images <strong style="color:blue">(4000 &times 4000)</strong>, which contain <strong style="color:blue">15</strong> categories. -->
+
+                </p>
+                <p>
+                    Through the dataset and the tasks, we aim to draw attention from the a wide range of communities and call for more future
+                    research and efforts on the problems of object dection in aerial images.
+                    <!-- We believe the contest will not only promote the development of algorithms for object
+			detection in Earth Vision, but also pose interesting algorithmic questions to general object
+			detection in computer vision. -->
+                </p>
+
+                <h2>
+                    Topics
+                </h2>
+                <p>
+                    Topics of interests include, but are not limited to, following fields
+                    <ul>
+                        <li>
+                            Method for object detection in optical remote sensing images
+                        </li>
+
+                        <li>
+                            Method for object detection in SAR remote sensing images
+                        </li>
+
+                        <li>
+                            Method for object detection in UAV images
+                        </li>
+
+                        <li>
+                            Framework for object detection in aerial images
+                        </li>
+                        <li>
+                            Practical applications of object detection in aerial images
+                        </li>
+                        <li>
+                            Feature extraction for object detection in aerial images
+                        </li>
+                        <li>
+                            Benchmarks of object detection in aerial images
+                        </li>
+                        <li>
+                            Reviews of object detection in aerial images
+                        </li>
+                    </ul>
+                </p>
+
+                <h2>
+                    Submissions
+                </h2>
+
+                <p>
+                    TBA.
+                </p>
+                <!-- <h2>
+					Communicate
+				</h2>
+
+				<p>
+					For any problem you have in using DOTA or DOAI2019, you can join the
+					<a href="https://jq.qq.com/?_wv=1027&k=5cs05Gq">QQ group</a> and communicate.
+				</p> -->
+
+
+                <!-- <div class="section bibtex"> -->
+                <!-- <h3>
+		Citation
+	</h3>
+	<p> If you make use of the DOTA dataset, please cite our following paper: </p>
+	<pre>
+@article{xia2017dota,
+title={DOTA: A Large-scale Dataset for Object Detection in Aerial Images},
+author={Xia, Gui-Song and Bai, Xiang and Ding, Jian and Zhu, Zhen and Belongie, Serge and Luo, Jiebo and Datcu, Mihai and Pelillo, Marcello and Zhang, Liangpei},
+journal={arXiv preprint arXiv:1711.10398},
+year={2017}
+}
+	</pre> -->
+                <!-- </div> -->
+                <!-- </p> -->
+                <br>
+            </div>
+        </div>
+    </div>
+    <!-- <br>
+	<div align="center">
+		<a href="http://www.amazingcounters.com">
+			<img border="0" src="http://cc.amazingcounters.com/counter.php?i=3220030&c=9660403" alt="AmazingCounters.com">
+		</a>
+	</div>
+	<br> -->
+
+    </div>
+
+</body>
+
+</html>
