@@ -1,270 +1,221 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>CVPR WORKSHOP</title>
-	<!-- <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
-	<script src="jquery/jquery.min.js"></script>
-	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-	<style>
-		body {
-			background-color: rgb(250, 250, 250);
-			/*UCLA bgcolor*/
-		}
-	</style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Detecting Objects in Aerial Images (DOAI)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
 </head>
 
 <body>
 
-	<div class="container">
-		<div class="jumbotron">
-			<div class="content">
-				<h1 style="text-align:center; margin-top:80px; font-weight: bold; color:rgb(100,10,250); font-size: 48px;">
-					Detecting Objects in Aerial Images (DOAI)
-				</h1>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container mContainer">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto m-navbar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="font-size:14px">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cfp.html" style="font-size:14px">CFP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="people.html" style="font-size:14px">People</a>
+                    </li>
 
-				<!-- <p style="text-align:center; color:blue; position:relative; top:7%"> -->
-				<p style="text-align:center; margin-top:15px; color: rgb(10,10,250); font-size: 32px;">
-					<strong>
-						<span style="font-style:italic">A Workshop at CVPR'2019 </span>
-					</strong>
-				</p>
-				<!-- <body background="images/largeimage2.jpg"></body> -->
-				<!-- <img src="images/largeimage2.jpg" class="img-responsive center-block" /> -->
-			</div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="font-size:14px" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Challenge
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="registration.html">Registration</a>
+                            <a class="dropdown-item" href="dataset.html">Dataset</a>
+                            <a class="dropdown-item" href="tasks.html">Tasks</a>
+                            <a class="dropdown-item" href="evaluation.html">Evaluation</a>
+                            <a class="dropdown-item" href="results.html">Results</a>
+                        </div>
+                    </li>
 
-		</div>
-		<div class="row">
-			<div class="span12">
+                    <li class="nav-item">
+                        <a class="nav-link" href="ImportantDate.html" style="font-size:14px"> Dates </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="program.html" style="font-size:14px">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sponsors.html" style="font-size:14px">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" style="font-size:14px">Contact</a>
+                    </li>
 
-				<div class="row">
-					<div class="span6 offset2">
-						<ul class="nav nav-tabs">
-							<li>
-								<a href="index.html">Home</a>
-							</li>
-							<li>
-								<a href="cfp.html">CFP</a>
-							</li>
-							<li>
-								<a href="people.html">People</a>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-									Challenge
-									<b class="caret"></b>
-								</a>
-								<ul class="dropdown-menu">
-									<!-- <li>
-																					<a href="guideline.html">Participation guidelines</a>
-																				</li> -->
-									<li>
-										<a href="dataset.html">Dataset</a>
-									</li>
-									<li>
-										<a href="tasks.html">Tasks</a>
-									</li>
-									<li>
-										<a href="evaluation.html">Evaluation</a>
-									</li>
-									<li>
-										<a href="results.html">Results</a>
-									</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-								</ul>
-							</li>
-							<li class="active">
-								<a href="program.html">Program</a>
-							</li>
+  <!-- Page Header -->
+  <header class="masthead m-height" style="background-image: url('images/bg.gif');">
+    <div class="overlay" style="background-color: #212529;opacity: 0.85"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading m-head">
+            <h2 style="text-align:center; margin-top:60px; font-weight: bold; font-size: 30px;">
+              The 1st Workshop on
+            </h2>
+            <h1 style="text-align:center; font-weight: bold; font-size: 42px; color:#FF9900">
+              Detecting Objects in Aerial Images
+            </h1>
+            <!-- <h2>Detecting Objects in Aerial Images (DOAI)</h2> -->
+            <h2 style="text-align:center; font-size:30px; font-weight: bold; font-style: italic">
+              in conjunction with IEEE CVPR 2019</span>
+              <span class="subheading" style="text-align:center; margin-top:40px; font-weight:bold; font-size:26px; font-style: italic">
+                June 16, 2019, Long Beach, California.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-							<li>
-								<a href="ImportantDate.html"> Dates </a>
-							</li>
-							<li>
-								<a href="sponsors.html">Sponsors</a>
-							</li>
-							<li>
-								<a href="contact.html">Contact</a>
-							</li>
-							<br />
-						</ul>
-					</div>
-				</div>
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-md-10 mx-auto">
+                <h2 style="text-align:left; margin-bottom:10px; margin-top:20px; ">
+                    Invited Speakers
+                </h2>
+                <p style="text-align:justify;">
+                    <!-- <ul>
+                        <strong>TBA</strong>
 
+                    </ul> -->
+                    TBA.
+                </p>
 
-				<h2 style="text-align:left; margin-bottom:10px; margin-top:20px; ">
-					Invited Speakers
-				</h2>
-				<p style="text-align:justify;">
-					<ul>
-						<!-- <li>
-							<strong>Prof. Xiaoxiang Zhu,</strong> TUM, Germany
-						</li>
-						<li>
-							<strong>Prof. Bertrand Le Sa,</strong> ONERA, France
-						</li>
-						<li>
-							<strong>Dr. Jifeng Dai,</strong> MRSA
-						</li>
-						<li>
-							<strong>Dr. Baoguang shi,</strong> Microsoft
-						</li>
-						<li>
-							<strong>Dr. Jianping shi,</strong> SenseTime
-						</li>
-						<li>
-							<strong>Dr. Cong Yao,</strong> Face++
-						</li> -->
-						<strong>TBA</strong>
+                <h2>
+                    Workshop Program
+                </h2>
+                <p>
+                    TBA.
+                </p>
+                <!-- <table class="minimalistBlack">
+                    <thead>
+                        <tr>
+                            <th width="25%">Time</th>
+                            <th width="60%">Title</th>
+                            <th width="15%">Speakers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8:30</td>
+                            <td>Invited talk</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9:00</td>
+                            <td>Invited talk</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>9:30</td>
+                            <td>Four oral representations</td>
+                            <td>winner</td>
+                        </tr>
+                        <tr>
+                            <td>10:30</td>
+                            <td>Coffee and poster session</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11:20</td>
+                            <td>Award ceremony</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>11:30</td>
+                            <td>Panel discussion</td>
+                            <td></td>
+                        </tr>
 
-					</ul>
-				</p>
+                    </tbody>
+                </table> -->
 
-				<h2>
-					Workshop Program
-				</h2>
-				<table class="minimalistBlack">
-					<thead>
-						<tr>
-							<th width="10%">Time</th>
-							<th width="70%">Title</th>
-							<th width="20%">Speakers</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>8:30</td>
-							<td>Invited talk</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>9:00</td>
-							<td>Invited talk</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>9:30</td>
-							<td>Four oral representations</td>
-							<td>winner</td>
-						</tr>
-						<tr>
-							<td>10:30</td>
-							<td>Coffee and poster session</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>11:20</td>
-							<td>Award ceremony</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>11:30</td>
-							<td>Panel discussion</td>
-							<td></td>
-						</tr>
-						<!-- <tr>
-							<td>09:00</td>
-							<td>Opening Remarks</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>09:15</td>
-							<td>Invited Talk</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>09:45</td>
-							<td>Invited Talk</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>10:15</td>
-							<td>Tech report of winner teams</td>
-							<td>Winner</td>
-						</tr>
-						<tr>
-							<td>10:35</td>
-							<td>Morning Break</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>10:45</td>
-							<td>Invited Talk</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>11:15</td>
-							<td>Invited Talk</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>11:45</td>
-							<td>Tech report of winner teams</td>
-							<td>Winner</td>
-						</tr>
-						<tr>
-							<td>12:05</td>
-							<td>Lunch</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>13:00</td>
-							<td>Invited Talk</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>13:30</td>
-							<td>Invited Talk</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>14:00</td>
-							<td>Tech report of winner teams</td>
-							<td>Winner</td>
-						</tr>
-						<tr>
-							<td>14:20</td>
-							<td>Poster Session</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>16:00</td>
-							<td> Award Ceremony</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>16:30</td>
-							<td>Collaboration Panel</td>
-							<td>Speakers and Organizers</td>
-						</tr>
-						<tr>
-							<td>17:30</td>
-							<td>Closing Remarks</td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>19:00</td>
-							<td>Workshop Dinner(invitation-only)</td>
-							<td>All Presenters and DOAI Team</td>
-						</tr> -->
-					</tbody>
-				</table>
+            </div>
+        </div>
+    </div>
 
-				<br>
-				<br>
-			</div>
-		</div>
-		<!-- <br>
-		<div align="center">
-			<a href="http://www.amazingcounters.com">
-				<img border="0" src="http://cc.amazingcounters.com/counter.php?i=3220030&c=9660403" alt="AmazingCounters.com">
-			</a>
-		</div>
-		<br> -->
-	</div>
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/home?status=https%3A//dingjiansw101.github.io/doai/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dingjiansw101.github.io/doai/">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <!-- <li class="list-inline-item">
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li> -->
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; DOAI 2019</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/clean-blog.min.js"></script>
 
 </body>
 

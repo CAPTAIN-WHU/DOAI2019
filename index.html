@@ -1,216 +1,207 @@
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>DOAI2019</title>
-	<!-- <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">     -->
-	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
-	<script src="jquery/jquery.min.js"></script>
-	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
-	<style>
-		/*image gallery*/
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-		div.gallery {
-			margin: 10px;
-			border: 1px solid #ccc;
-			float: left;
-			width: 140px;
-		}
+  <title>Detecting Objects in Aerial Images (DOAI)</title>
 
-		div.gallery:hover {
-			border: 1px solid #777;
-		}
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-		div.gallery img {
-			width: 100%;
-			height: auto;
-		}
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
 
-		div.desc {
-			padding: 15px;
-			text-align: center;
-		}
-	</style>
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.min.css" rel="stylesheet">
+  <link href="css/common.css" rel="stylesheet">
 </head>
 
 <body>
 
-	<div class="container">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container mContainer">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto m-navbar">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" style="font-size:14px">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cfp.html" style="font-size:14px">CFP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="people.html" style="font-size:14px">People</a>
+          </li>
 
-		<div class="jumbotron">
-			<div class="content">
-				<h1 style="text-align:center; margin-top:80px; font-weight: bold; color:rgb(100,10,250); font-size: 48px;">
-					Detecting Objects in Aerial Images (DOAI)
-				</h1>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="font-size:14px" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Challenge
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="registration.html">Registration</a>
+              <a class="dropdown-item" href="dataset.html">Dataset</a>
+              <a class="dropdown-item" href="tasks.html">Tasks</a>
+              <a class="dropdown-item" href="evaluation.html">Evaluation</a>
+              <a class="dropdown-item" href="results.html">Results</a>
+            </div>
+          </li>
 
-				<!-- <p style="text-align:center; color:blue; position:relative; top:7%"> -->
-				<p style="text-align:center; margin-top:15px; color: rgb(10,10,250); font-size: 32px;">
-					<strong>
-						<span style="font-style:italic">A Workshop at CVPR'2019 </span>
-					</strong>
-				</p>
-				<!-- <body background="images/largeimage2.jpg"></body> -->
-				<!-- <img src="images/largeimage2.jpg" class="img-responsive center-block" /> -->
-			</div>
+          <li class="nav-item">
+            <a class="nav-link" href="ImportantDate.html" style="font-size:14px"> Dates </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="program.html" style="font-size:14px">Program</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sponsors.html" style="font-size:14px">Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" style="font-size:14px">Contact</a>
+          </li>
 
-		</div>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-
-		<div class="row">
-			<div class="span6 offset2">
-				<ul class="nav nav-tabs">
-					<li class="active">
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="cfp.html">CFP</a>
-					</li>
-					<li>
-						<a href="people.html">People</a>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							Challenge
-							<b class="caret"></b>
-						</a>
-						<ul class="dropdown-menu">
-							<!-- <li>
-									<a href="guideline.html">Participation guidelines</a>
-								</li> -->
-							<li>
-								<a href="dataset.html">Dataset</a>
-							</li>
-							<li>
-								<a href="tasks.html">Tasks</a>
-							</li>
-							<li>
-								<a href="evaluation.html">Evaluation</a>
-							</li>
-							<li>
-								<a href="results.html">Results</a>
-							</li>
-
-						</ul>
-					</li>
-					<li>
-						<a href="program.html">Program</a>
-					</li>
-
-					<li>
-						<a href="ImportantDate.html"> Dates </a>
-					</li>
-					<li>
-						<a href="sponsors.html">Sponsors</a>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-					<br />
-				</ul>
-			</div>
-		</div>
-
-
-
-
-
-		<div class="row">
-			<div class="span12">
-
-				<h2 style="text-align:left; margin-bottom:10px; margin-top:20px; ">
-					News
-				</h2>
-				<p>
-					<ul>
-						<!-- <li>
-				<strong>2018-03-27</strong> The submission deadline is extended to April 25.<strong class="news">New</strong>
-			</li>
-			<li>
-				<strong>2018-03-16</strong> The registration is open now. Please <a href="http://119.23.15.48:8001">registrate</a> to download the extra test images and submit your results.<strong class="news">New</strong>
-			</li>
-			<li>
-				<strong>2018-03-8</strong> DOTA <a href="https://github.com/CAPTAIN-WHU/DOTA_devkit">development kit</a> ia available now. It's helpful to play on ODAI! <strong class="news">New</strong>
-			</li>
-			<li>
-				<strong>2019-1-31</strong> The website for ODAI on <a href="http://www.icpr2018.org/">ICPR'2018</a> is online.
-			</li> -->
-						<li>
-							<strong>2019-1-31</strong> Preparations for the workshop are underway
-						</li>
-					</ul>
-				</p>
-
-				<h2>
-					Important Dates
-				</h2>
-				<p>
-					<ul>
-						<li>
-							Registration open and call for challenge: March 5, 2019
-						</li>
-						<li>
-							Training/Validation dataset available: March 5, 2019
-						</li>
-						<li>
-							Opening submission site and provide testing dataset: March 20, 2019
-						</li>
-						<li>
-							<strong>Challenge submission deadline:</strong> April 15, 2019
-						</li>
-						<li>
-							<strong>Paper submission deadline:</strong> April 17, 2019
-						</li>
-						<li>
-							Paper notification to authors: May 10, 2019
-						</li>
-						<li>
-							Camera ready deadline: May 17, 2019
-						</li>
-					</ul>
-				</p>
+  <!-- Page Header -->
+  <header class="masthead m-height" style="background-image: url('images/bg.gif');">
+    <div class="overlay" style="background-color: #212529;opacity: 0.85"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading m-head">
+            <h2 style="text-align:center; margin-top:60px; font-weight: bold; font-size: 30px;">
+              The 1st Workshop on
+            </h2>
+            <h1 style="text-align:center; font-weight: bold; font-size: 42px; color:#FF9900">
+              Detecting Objects in Aerial Images
+            </h1>
+            <!-- <h2>Detecting Objects in Aerial Images (DOAI)</h2> -->
+            <h2 style="text-align:center; font-size:30px; font-weight: bold; font-style: italic">
+              in conjunction with IEEE CVPR 2019</span>
+              <span class="subheading" style="text-align:center; margin-top:40px; font-weight:bold; font-size:26px; font-style: italic">
+                June 16, 2019, Long Beach, California.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
 
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-md-10 mx-auto">
+        <h2 style="text-align:left; margin-bottom:10px; margin-top:10px; ">
+          News
+        </h2>
+        <p>
+          <ul>
+            <li>
+              <strong>2019-03-04</strong>: The challenge is open. <strong class="news">New!</strong>
+            </li>
+            <li>
+              <strong>2019-03-04</strong>: The new dataset <a style="text-decoration:underline" href="dataset.html">DOTA-v1.5</a> is available online. <strong class="news">New!</strong>
+            </li>
+          </ul>
+        </p>
 
-				<!-- <h2>
-					Communicate
-				</h2>
+        <h2>
+          Important Dates
+        </h2>
+        <p>
+          <ul>
+            <li>
+              Registration open and call for challenge: March 5, 2019
+            </li>
+            <li>
+              Training/Validation dataset available: March 5, 2019
+            </li>
+            <li>
+              Opening submission site and provide testing dataset: March 20, 2019
+            </li>
+            <li>
+              <strong>Challenge submission deadline:</strong> April 15, 2019
+            </li>
+            <li>
+              <strong>Paper submission deadline:</strong> April 17, 2019
+            </li>
+            <li>
+              Paper notification to authors: May 10, 2019
+            </li>
+            <li>
+              Camera ready deadline: May 17, 2019
+            </li>
+          </ul>
+        </p>
 
-				<p>
-					For any problem you have in using DOTA or DOAI2019, you can join the
-					<a href="https://jq.qq.com/?_wv=1027&k=5cs05Gq">QQ group</a> and communicate.
-				</p> -->
+      </div>
+    </div>
+  </div>
 
+  <hr>
 
-				<!-- <div class="section bibtex"> -->
-				<!-- <h3>
-		Citation
-	</h3>
-	<p> If you make use of the DOTA dataset, please cite our following paper: </p>
-	<pre>
-@article{xia2017dota,
-title={DOTA: A Large-scale Dataset for Object Detection in Aerial Images},
-author={Xia, Gui-Song and Bai, Xiang and Ding, Jian and Zhu, Zhen and Belongie, Serge and Luo, Jiebo and Datcu, Mihai and Pelillo, Marcello and Zhang, Liangpei},
-journal={arXiv preprint arXiv:1711.10398},
-year={2017}
-}
-	</pre> -->
-				<!-- </div> -->
-				<!-- </p> -->
-				<br>
-			</div>
-		</div>
-	</div>
-	<!-- <br>
-	<div align="center">
-		<a href="http://www.amazingcounters.com">
-			<img border="0" src="http://cc.amazingcounters.com/counter.php?i=3220030&c=9660403" alt="AmazingCounters.com">
-		</a>
-	</div>
-	<br> -->
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="https://twitter.com/home?status=https%3A//dingjiansw101.github.io/doai/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//dingjiansw101.github.io/doai/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <!-- <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li> -->
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;
+            <a href="http://captain.whu.edu.cn/">CAPTAIN</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-	</div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
 
 </body>
 
