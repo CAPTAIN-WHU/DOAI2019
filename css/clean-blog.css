@@ -223,14 +223,15 @@ header.masthead .site-heading .subheading {
   header.masthead .page-heading h1,
   header.masthead .site-heading h1 {
     /* font-size: 80px; */
-    font-size: 32px;    
+    font-size: 12px;    
   }
   header.masthead .page-heading h2,
   header.masthead .site-heading h2 {
-    font-size: 20px;    
+    font-size: 10px;    
   }
   header.masthead .site-heading .subheading {
-    font-size: 16px;
+    font-size: 8px;
+    margin-top: 0px;
   }
 }
 
@@ -246,6 +247,7 @@ header.masthead .site-heading .subheading {
   }
   header.masthead .site-heading .subheading {
     font-size: 26px;
+    margin-top: 40px;
   }
 }
 
