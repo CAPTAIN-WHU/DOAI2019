@@ -88,7 +88,7 @@
             "RA": 0.76,
             "TC": 0.909,
             "TeamMembers": "Yang Xue; Yang Jirui; Wang Yashan; Zhang Yue; Sun Xian; Fu Kun",
-            "description": "An improved version of R2CNN based on FPN. Structures and techniques used include Resnet101, Attention Mechanism, Data Enhancement (Horizontal and Vertical Flip, Rotation, Grayscale), Image Pyramid, Model Ensemble, and other small tricks. The code and models will be available at https://github.com/DetectionTeamUCAS.\nReference code and paper:\n https://github.com/DetectionTeamUCAS/R2CNN_Faster-RCNN_Tensorflow \n https://github.com/yangxue0827/R2CNN_FPN_Tensorflow \n https://arxiv.org/abs/1811.07126 ",
+            "description": "Task1_ensemble1",
             "GTF": 0.744,
             "Institute": "IECAS",
             "date": "2019-04-13 22:46:26",
