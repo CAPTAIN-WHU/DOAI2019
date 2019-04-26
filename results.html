@@ -133,6 +133,7 @@
 									<th>Team Name</th>
 									<!-- <th>Team Member</th> -->
 									<!-- <th>Institute</th> -->
+									<!-- <th>Description</th> -->
 									<th> mAP</strong> </th>
 									<th>Plane</th>
 									<th>BD</th>
@@ -172,6 +173,7 @@
 									<th>Team Name</th>
 									<!-- <th>Team Member</th> -->
 									<!-- <th>Institute</th> -->
+									<!-- <th>Description</th> -->
 									<th> mAP</strong> </th>
 									<th>Plane</th>
 									<th>BD</th>
@@ -269,7 +271,7 @@
 			function format(d) {
 			// `d` is the original data object for the row
 
-				return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +'<tr>' +'<td>TeamName:</td>' +'<td>' + d.TeamNames + '</td>' +'</tr>' +'<tr>' +'<td>Institute:</td>' +'<td>' + d.Institute + '</td>' +'</tr>' +	'<tr>' +	'<td>TeamMembers:</td>' +'<td>' + d.TeamMembers + '</td>' +'</tr>'+'</table>';
+				return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +'<tr>' +'<td>TeamName:</td>' +'<td>' + d.TeamNames + '</td>' +'</tr>' +'<tr>' +'<td>Institute:</td>' +'<td>' + d.Institute + '</td>' +'</tr>' +	'<tr>' +	'<td>TeamMembers:</td>' +'<td>' + d.TeamMembers + '</td>' +'</tr>'+'<tr>' +'<td>Description:</td>' +'<td>' + d.description + '</td>' +'</tr>'+'</table>';
 			}
 
 		$(document).ready(function () {
